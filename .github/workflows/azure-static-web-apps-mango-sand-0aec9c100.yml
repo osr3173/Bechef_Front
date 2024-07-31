@@ -19,6 +19,22 @@ jobs:
         with:
           submodules: true
           lfs: false
+
+      #클라이언트 배포 최적화
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm # npm 패키지를 저장할 위치
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} # 캐시 키
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Node.js 설정
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20" # Node.js 버전 20 사용
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
