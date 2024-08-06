@@ -1,7 +1,7 @@
 import { Kit } from "../admin/atom/Kit/Kit";
 
 const DOMAIN = `http://localhost:8080`; // test용 url
-const SERVER_URL = `bechef-server-g7avefhqeeh8fych.koreacentral-01.azurewebsites.net`; // 배포 url
+const SERVER_URL = `https://bechef-server-g7avefhqeeh8fych.koreacentral-01.azurewebsites.net`; // 배포 url
 const API_URL = `${SERVER_URL}/api`;
 const ADMIN_URL = `${SERVER_URL}/api/admin`;
 const INFO_URL = `${SERVER_URL}/api/info`;
