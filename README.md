@@ -4,7 +4,7 @@
 
 ![이미지](https://github.com/yonghyuny/bechefFront/blob/main/readme.png)
 
-- 배포 URL:(https://delightful-meadow-09cec9100.5.azurestaticapps.net)
+- 배포 URL:(https://mango-sand-0aec9c100.5.azurestaticapps.net)
 - Admin ID: admin
 - Admin PWD: admin1111
 
